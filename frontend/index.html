@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Help Desk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css?v=freshui-1">
+</head>
+
+<body>
+    <div class="ambient-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <main class="app-shell">
+        <aside class="sidebar-panel">
+            <div class="hero-topbar">
+                <p class="eyebrow">Admission Help Desk</p>
+                <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark
+                    Mode</button>
+            </div>
+
+            <section class="hero-block">
+                <span class="hero-kicker">Your AI Admission Guide</span>
+                <h1>Navigate your college journey with complete clarity.</h1>
+                <p class="hero-copy">
+                    Get instant, accurate guidance on eligibility criteria, required documents, scholarships,
+                    counseling, and campus facilities. Skip the stress and ask directly.
+                </p>
+            </section>
+
+            <section class="spotlight-card spotlight-card-strong">
+                <div class="spotlight-head">
+                    <span class="spotlight-label">Pro Tip</span>
+                    <span class="spotlight-badge">Get precise details</span>
+                </div>
+                <p class="spotlight-text">Try a complete question like "What documents are required for MBA admission?"
+                </p>
+            </section>
+
+            <div class="mini-grid">
+                <article class="mini-card">
+                    <span>Best for</span>
+                    <strong>Eligibility checks</strong>
+                    <p>Ask course-wise requirements in simple language.</p>
+                </article>
+                <article class="mini-card">
+                    <span>Helpful for</span>
+                    <strong>Admission process</strong>
+                    <p>Understand documents, deadlines, counselling, and next steps.</p>
+                </article>
+            </div>
+
+            <section class="info-ribbon">
+                <div class="ribbon-item">
+                    <strong>Eligibility</strong>
+                    <span>Course-wise requirements</span>
+                </div>
+                <div class="ribbon-item">
+                    <strong>Documents</strong>
+                    <span>Application checklist</span>
+                </div>
+                <div class="ribbon-item">
+                    <strong>Deadlines</strong>
+                    <span>Application window guidance</span>
+                </div>
+            </section>
+
+            <section class="chip-section">
+                <p class="section-title">Quick prompts</p>
+                <div class="chip-group">
+                    <button class="suggestion-chip"
+                        data-question="What is the eligibility for MCA at KR Mangalam University?">MCA
+                        eligibility</button>
+                    <button class="suggestion-chip" data-question="What documents are required for MBA admission?">MBA
+                        documents</button>
+                    <button class="suggestion-chip"
+                        data-question="What is the last date to apply for BCA admission?">Application date</button>
+                    <button class="suggestion-chip" data-question="How to apply for MBA admission?">Admission
+                        process</button>
+                </div>
+            </section>
+        </aside>
+
+        <section class="chat-panel">
+            <div class="chat-header">
+                <div>
+                    <p class="eyebrow">Live Chat</p>
+                    <h2>Admission Help Desk</h2>
+                    <p class="chat-subtitle">Ask a course, college, or admission-process question and get a direct
+                        reply.</p>
+                </div>
+                <span class="status-pill">API: <strong id="apiStatus">Ready</strong></span>
+            </div>
+
+            <div class="prompt-strip">
+                <span class="prompt-label">Try</span>
+                <p>Eligibility, documents, deadlines, hostel, counselling, scholarships</p>
+            </div>
+
+            <div id="chatMessages" class="chat-messages" aria-live="polite">
+                <article class="message bot">
+                    <div class="avatar">AI</div>
+                    <div class="bubble">
+                        Hello! You can ask any admission help desk question, and I will answer as clearly as possible.
+                    </div>
+                </article>
+            </div>
+
+            <form id="chatForm" class="chat-form">
+                <label class="sr-only" for="messageInput">Ask your question</label>
+                <textarea id="messageInput" rows="1"
+                    placeholder="Example: What documents are required for MBA admission?"></textarea>
+                <button id="sendButton" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="./js/script.js?v=20260404-5"></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+# Copy this file to application-local.properties and put your key there.
+# application-local.properties is gitignored - do not commit keys.
+
+openai.api.key=sk-your-key-here
+live.lookup.enabled=true

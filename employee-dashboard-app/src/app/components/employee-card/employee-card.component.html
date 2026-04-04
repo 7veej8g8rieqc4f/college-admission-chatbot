@@ -1,0 +1,22 @@
+<article class="employee-card">
+  <div class="employee-card__avatar">
+    {{ name.charAt(0) }}
+  </div>
+
+  <div class="employee-card__body">
+    <p class="employee-card__label">Employee Profile</p>
+    <h3 class="employee-card__name">{{ name }}</h3>
+
+    <div class="employee-card__meta">
+      <div class="employee-card__meta-item">
+        <span class="employee-card__meta-title">Role</span>
+        <strong>{{ role }}</strong>
+      </div>
+
+      <div class="employee-card__meta-item">
+        <span class="employee-card__meta-title">Department</span>
+        <strong>{{ department }}</strong>
+      </div>
+    </div>
+  </div>
+</article>

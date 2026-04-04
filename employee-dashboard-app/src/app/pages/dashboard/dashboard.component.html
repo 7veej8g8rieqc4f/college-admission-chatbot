@@ -1,0 +1,36 @@
+<section class="dashboard">
+  <header class="dashboard__hero">
+    <div class="dashboard__hero-copy">
+      <p class="dashboard__eyebrow">Company Portal</p>
+      <h1>{{ companyTitle }}</h1>
+      <p class="dashboard__description">
+        Manage employee visibility through a clean Angular dashboard with reusable components and fast single-page updates.
+      </p>
+    </div>
+
+    <div class="dashboard__hero-panel">
+      <span class="dashboard__hero-badge">Angular SPA</span>
+      <ul class="dashboard__hero-list">
+        <li>Parent component controls employee data</li>
+        <li>Child component renders reusable employee card</li>
+        <li>Only the needed UI updates inside the page</li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="dashboard__content">
+    <div class="dashboard__section-heading">
+      <div>
+        <p class="dashboard__eyebrow">Employee Overview</p>
+        <h2>Reusable Employee Card Component</h2>
+      </div>
+      <span class="dashboard__status">DashboardComponent -> EmployeeCardComponent</span>
+    </div>
+
+    <app-employee-card
+      [name]="employee.name"
+      [role]="employee.role"
+      [department]="employee.department">
+    </app-employee-card>
+  </section>
+</section>
