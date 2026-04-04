@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # College Admission Chatbot
 
 Simple college admission chatbot with:
@@ -44,3 +45,6 @@ to change:
 - dates
 - scholarship info
 - contact details
+=======
+# college-admission-chatbot
+>>>>>>> c38da87231c780439655015aa63252fecd9a703b
