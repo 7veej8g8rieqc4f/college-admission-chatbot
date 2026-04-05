@@ -38,3 +38,11 @@ out/
 
 ### Local secrets (OpenAI key) ###
 backend/src/main/resources/application-local.properties
+
+# Exclude build targets
+target/
+backend/target/
+26.0.1
+target/
+backend/target/
+26.0.1

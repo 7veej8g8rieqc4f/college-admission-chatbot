@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8082/api/chat";
+const API_URL = "/api/chat";
 const THEME_KEY = "college-chatbot-theme";
 const WELCOME_MESSAGE = "Hello! You can ask any admission help desk question, and I will answer as clearly as possible.";
 
